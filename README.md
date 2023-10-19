@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+This app will be a direct brewery to client application!
+
+*Initial Age Verification*
+Home Page
+Login Page
+-Vendor Page (MVP)
+-Client Page (MVP)
+    -Account Settings
+    -Favorite Breweries
+-Available Brewers Page (MVP)
+    -Brewery Offerings
+    -Review Page
+    -Contact and location Page
+-Cart Page
+    -Payment Page (enter date of birth)
+-Order Confirmation Page (with notice to be ready to show your ID to driver upon delivery. Email confirmation?)
