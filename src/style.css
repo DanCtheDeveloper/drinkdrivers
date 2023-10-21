@@ -6,6 +6,19 @@ body {
     margin: 0;
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("./components/images/Background.png");
+    background-size: cover;
+    opacity: 0.5;
+}
+
 .container {
     margin: 1rem;
     text-align: center;
@@ -13,7 +26,7 @@ body {
 
 .nav {
     display: flex;
-    background-color: black;
+    background-color: #adcfb1;
     color: white;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +34,7 @@ body {
     padding: 0 1rem;
 }
 
-.drink-drives {
+.drink-drivers {
     font-size: 2rem;
 }
 
@@ -43,6 +56,6 @@ body {
  }
 
  .nav a:hover {
-    background-color: #777;
+    background-color: #a3c2a7;
  }
 
