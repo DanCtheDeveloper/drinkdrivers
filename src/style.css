@@ -14,7 +14,7 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("C:\Users\lorans\Desktop\Andre\SDSU\MS3\drinkdrivers\src\images\DALLE_2023-10-18_21.12.38_-_Vector_composition_on_a_muted_green_background_showcasing_200_beer_cans_with_fine_geometric_patterns._The_cans_are_densely_positioned_in_a_random_layo.png");
+    background-image: url("./components/images/Background.png");
     background-size: cover;
     opacity: 0.5;
 }
