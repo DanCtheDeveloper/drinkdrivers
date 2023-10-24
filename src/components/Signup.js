@@ -25,7 +25,7 @@ export default function Signup() {
         </button>
       </form>
       <br />
-      <Link to="" className='link'>Vendor?</Link>
+      <Link to="/vendors" className='link'>Vendor?</Link>
     </div>
   );
 }

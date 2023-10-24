@@ -28,6 +28,18 @@ h1 {
     width: 700px;
 }
 
+.welcome {
+    border-radius: 1rem;
+    border: black 4px solid;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
 .email, .password, .submit, .name, .link, p {
     background-color: white;
     padding: 1rem;
@@ -38,6 +50,7 @@ h1 {
     width: 700px;
     text-align: center;
     text-decoration: none;
+    color: black;
 }
 
 .container {
