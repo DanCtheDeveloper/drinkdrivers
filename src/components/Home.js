@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div>
             <h1>Home</h1>
-            <img src="./images/Welcome.png" alt="Welcome"/>
+            <img src= {require("./images/Welcome.png")} height={ 500 } width={ 500 } alt="Welcome"/>
             <div>
                 <Link to={'/vendors'}>
                     <button>View Vendors</button>
