@@ -3,20 +3,24 @@ import { Link } from "react-router-dom"
 export default function Home() {
     return (
         <div>
-            <h1>Home</h1>
-            <img src="./images/Welcome.png" alt="Welcome"/>
-            <div>
-                <Link to={'/vendors'}>
-                    <button>View Vendors</button>
+            <img src= {require("./images/Welcome.png")} height={ 350 } width={ 400 } alt="Welcome" className="welcome"/>
+            
+            <div className="home">
+                <br />
+                <Link to={'/vendors'} className="link">
+                    View Vendors
                 </Link>
-                <Link to={'/brews'}>
-                    <button>House Brews</button>
+                <br />
+                <Link to={'/brews'} className="link">
+                    House Brews
                 </Link>
-                <Link to={'/about'}>
-                    <button>About</button>
+                <br />
+                <Link to={'/about'} className="link">
+                    About
                 </Link>
-                <Link to={'/signup'}>
-                    <button>Don't have an account? Sign up here!</button>
+                <br />
+                <Link to={'/signup'} className="link">
+                    Don't have an account? Sign up here!
                 </Link>
             </div>
 
