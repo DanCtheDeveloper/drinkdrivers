@@ -18,16 +18,19 @@ export default function Login() {
 
     return (
         <div className="login">
-            <h1>LOGIN</h1>
+            <h1>Welcome User!</h1>
             <form action="POST">
-                <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder="email" />
-                <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="password" />
-                <button type="submit" onClick={submit}>LOGIN</button>
+                <input type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email" className='email'/>
+                <br />
+                <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Password" className='password'/>
+                <br />
+                <button type="submit" onClick={submit} className='submit'>Log In & Get Beer</button>
             </form>
             <br />
-            <p>Don't have an account?</p>
-            <br />
-            <Link to="/signup">SIGN UP</Link>
+            <Link to="/signup" className="link">
+                Don't have an account?
+                Create one here!
+            </Link>
         </div>
     );
 }

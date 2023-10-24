@@ -12,19 +12,20 @@ export default function Signup() {
 
   return (
     <div className="signup">
-      <h1>SIGN UP</h1>
+      <h1>Welcome User!<br />Create your account here</h1>
       <form action="POST">
-        <input  type="text"  onChange={(e) => setName(e.target.value)}  placeholder="username"/>
-        <input  type="email"  onChange={(e) => setEmail(e.target.value)}  placeholder="email"/>
-        <input  type="password"  onChange={(e) => setPassword(e.target.value)}  placeholder="password"/>
-        <button type="submit" onClick={submit}>
-          REGISTER
+        <input  type="text"  onChange={(e) => setName(e.target.value)}  placeholder="username" className='name'/>
+        <br />
+        <input  type="email"  onChange={(e) => setEmail(e.target.value)}  placeholder="email" className='email'/>
+        <br />
+        <input  type="password"  onChange={(e) => setPassword(e.target.value)}  placeholder="password" className='password'/>
+        <br />
+        <button type="submit" onClick={submit} className='submit'>
+          Sign Up & Get Beer
         </button>
       </form>
       <br />
-      <p>Already have an account?</p>
-      <br />
-      <Link to="/login">LOGIN</Link>
+      <Link to="/vendors" className='link'>Vendor?</Link>
     </div>
   );
 }

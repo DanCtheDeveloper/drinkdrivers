@@ -20,6 +20,40 @@ body::before {
     opacity: 0.5;
 }
 
+h1 {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: black 4px solid;
+    display: inline-block;
+    width: 700px;
+}
+
+.welcome {
+    border-radius: 1rem;
+    border: black 4px solid;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.email, .password, .submit, .name, .link, p {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: black 4px solid;
+    display: block;
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     margin: 1rem;
     text-align: center;
@@ -27,12 +61,13 @@ body::before {
 
 .nav {
     display: flex;
+    border: black 5px solid;
     background-color: #adcfb1;
     color: white;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0 5rem;
 }
 
 .drink-drivers {

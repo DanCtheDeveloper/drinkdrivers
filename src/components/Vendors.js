@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import './style.css';
-import Navbar from './Navbar';
+// import './style.css';
+// import Navbar from './Navbar';
 
 
 const vendors = [
@@ -11,4 +11,10 @@ const vendors = [
     { id: 4, name: 'Texan Drafthouse' },
   ];
 
-  export default vendors;
+  export default function Vendors() {
+    return (
+        <div>
+            <h1>Vendors</h1>
+        </div>
+    );
+}

@@ -5,7 +5,8 @@ import About from './components/About';
 import Cart from './components/Cart';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import { Route, Routes } from 'react-router-dom';
+import Vendors from './components/Vendors';
+import { Route, Router, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/vendors" element={<Vendors />} />
+
         </Routes>
       </div>
     </>
