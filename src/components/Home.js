@@ -20,7 +20,7 @@ export default function Home() {
                 </Link>
                 <br />
                 <Link to={'/signup'} className="link">
-                    Don't have an account? Sign up here!
+                    Don't have an account? <br />Sign up here!
                 </Link>
             </div>
 
