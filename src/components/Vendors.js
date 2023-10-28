@@ -14,7 +14,25 @@ const vendors = [
   export default function Vendors() {
     return (
         <div>
-            <h1>Vendors</h1>
+            <h1>Breweries</h1>
+            <div className="breweries">
+                <ul>
+                    <li>
+                    <img className="beer" src= {require ("./images/A&W.png")} height={ 300 } width={ 300 } alt="A&W"/>
+                    </li>
+                    <li>
+                    <img className="beer" src= {require ("./images/BUSCH.png")} height={ 300 } width={ 300 } alt="BUSCH"/>
+                    </li>
+                    <li>
+                    <img className="beer" src= {require ("./images/coors-light.png")} height={ 300 } width={ 300 } alt="COORS"/>
+                    </li>
+                    <li>
+                    <img className="beer" src= {require ("./images/amstel-beer.png")} height={ 300 } width={ 300 } alt="AMSTEL"/>
+                    </li>
+                </ul>
+                <br />
+                <Link to="/vendors" className='link'>Join Our Vendors!</Link>
+            </div>
         </div>
     );
 }
