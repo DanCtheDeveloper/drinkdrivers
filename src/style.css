@@ -52,31 +52,12 @@ h1 {
   background-color: #a3c2a7;
 }
 
-@media (max-width: 768px) {
-  .nav {
-    padding: 5px;
-  }
-
-  .nav-links {
-    justify-content: space-between;
-  }
-
-  .nav-links a {
-    font-size: 16px;
-  }
-  
-  .nav-links img {
-    height: 100px;
-    width: 100px;
-  }
-}
-
 /* home style */
 
 .welcome {
-    border: black 4px solid;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px black;
+  border: black 4px solid;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .directory {
@@ -87,77 +68,54 @@ h1 {
 }
 
 .btn1 {
-    background: url(../src/components/images/ddvendors.jpg) no-repeat;
+  background: url(../src/components/images/ddvendors.jpg) no-repeat;
 }
 
 .btn2 {
-    background: url(../src/components/images/ddbeer.jpg) no-repeat;
+  background: url(../src/components/images/ddbeer.jpg) no-repeat;
 }
 
 .btn3 {
-    background: url(../src/components/images/ddkegs.jpg) no-repeat;
+  background: url(../src/components/images/ddkegs.jpg) no-repeat;
 }
 
 .btn4 {
-    background: url(../src/components/images/ddempty.jpg) no-repeat;
+  background: url(../src/components/images/ddempty.jpg) no-repeat;
 }
 
 .btn1, .btn2, .btn3, .btn4 {
-    background-size: cover;
-    cursor: pointer;
-    border: solid 1px black;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    height: 300px;
-    width: 300px;
-    box-shadow: 5px 5px 10px black;
-    transform: translateX(0px);
-    transition: all 0.8s;
+  background-size: cover;
+  cursor: pointer;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 5px 10px black;
+  transform: translateX(0px);
+  transition: all 0.8s;
 }
 
 .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
-    box-shadow: 7px 7px 40px 10px gold;
+  box-shadow: 7px 7px 40px 10px gold;
 }
 
 span {
-    color: white;
-    font-family: HeadLineA;
-    font-size: 40px;
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-  }
-  .welcome {
-      height: 250px;
-      width: 300px
-  }
-  .btn1, .btn2, .btn3, .btn4 {
-    margin-bottom: 1rem;
-    height: 200px;
-    width: 200px
-  }
-  span {
-      font-size: 30px;
-  }
+  color: white;
+  font-family: HeadLineA;
+  font-size: 40px;
 }
 
 /*app style*/
 
 .container {
-    margin: 1rem;
-    text-align: center;
- }
+  margin: 1rem;
+  text-align: center;
+}
 
 /* signup style and login style */
 
-.email,
-.password,
-.submit,
-.name,
-.link,
-p {
+.email, .password, .submit, .name, .link, p {
   background-color: white;
   padding: 1rem;
   border-radius: 1rem;
@@ -171,11 +129,68 @@ p {
   transition: all 1.1s;
 }
 
+/*vendor style*/
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.beer {
+  border: black 4px solid;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 20px 100px 20px 20px;
+}
+
+/*MEDIA QUERIES*/
+
 @media (max-width: 768px) {
-    .email, .password, .submit, .name, .link, p{
-        width: 300px;
-    }
-    h1{
-        width: 300px;
-    }
+  /* navbar style */
+  .nav {
+    padding: 5px;
+  }
+  .nav-links {
+    justify-content: space-between;
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
+  .nav-links img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* home style */
+  .container {
+    max-width: 100%;
+  }
+  .welcome {
+    height: 250px;
+    width: 300px;
+  }
+  .btn1, .btn2, .btn3, .btn4 {
+    margin-bottom: 1rem;
+    height: 200px;
+    width: 200px;
+  }
+  span {
+    font-size: 30px;
+  }
+
+  /* signup style and login style */
+  .email, .password, .submit, .name, .link, p {
+    width: 300px;
+  }
+  h1 {
+    width: 300px;
+  }
+ 
+  /*vendor style*/
+  .beer {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 1rem;
+  }
 }
