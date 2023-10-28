@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from './Navbar';
 import './style.css';
 import Home from './components/Home';
@@ -20,7 +21,6 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/vendors" element={<Vendors />} />
-
         </Routes>
       </div>
     </>

@@ -1,97 +1,181 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150%;
-    z-index: -1;
-    background-image: url("./components/images/Background.png");
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  z-index: -1;
+  background-image: url("./components/images/Background.png"); /*background image*/
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5;
 }
 
 h1 {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: black 4px solid;
-    display: inline-block;
-    width: 700px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: black 4px solid;
+  display: inline-block;
+  width: 700px;
+  transition: all 1.1s;
 }
+
+/* navbar style */
+
+.nav {
+  background-color: #adcfb1;
+  border: black 5px solid;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav a:hover {
+  background-color: #a3c2a7;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 5px;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+  
+  .nav-links img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+/* home style */
 
 .welcome {
-    border-radius: 1rem;
     border: black 4px solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
 }
 
-.home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+.directory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
 }
 
-.email, .password, .submit, .name, .link, p {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: black 4px solid;
-    display: block;
-    margin: auto;
-    width: 700px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
+.btn1 {
+    background: url(../src/components/images/ddvendors.jpg) no-repeat;
 }
+
+.btn2 {
+    background: url(../src/components/images/ddbeer.jpg) no-repeat;
+}
+
+.btn3 {
+    background: url(../src/components/images/ddkegs.jpg) no-repeat;
+}
+
+.btn4 {
+    background: url(../src/components/images/ddempty.jpg) no-repeat;
+}
+
+.btn1, .btn2, .btn3, .btn4 {
+    background-size: cover;
+    cursor: pointer;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 10px black;
+    transform: translateX(0px);
+    transition: all 0.8s;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+    box-shadow: 7px 7px 40px 10px gold;
+}
+
+span {
+    color: white;
+    font-family: HeadLineA;
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .welcome {
+      height: 250px;
+      width: 300px
+  }
+  .btn1, .btn2, .btn3, .btn4 {
+    margin-bottom: 1rem;
+    height: 200px;
+    width: 200px
+  }
+  span {
+      font-size: 30px;
+  }
+}
+
+/*app style*/
 
 .container {
     margin: 1rem;
     text-align: center;
-}
-
-.nav {
-    display: flex;
-    border: black 5px solid;
-    background-color: #adcfb1;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 5rem;
-}
-
-.drink-drivers {
-    font-size: 2rem;
-}
-
-.nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-}
-
- .nav a {
-    color: inherit;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: stretch;
-    padding: .25rem;
  }
 
- .nav a:hover {
-    background-color: #a3c2a7;
- }
+/* signup style and login style */
 
+.email,
+.password,
+.submit,
+.name,
+.link,
+p {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: black 4px solid;
+  display: block;
+  margin: auto;
+  width: 700px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: all 1.1s;
+}
+
+@media (max-width: 768px) {
+    .email, .password, .submit, .name, .link, p{
+        width: 300px;
+    }
+    h1{
+        width: 300px;
+    }
+}

@@ -1,11 +1,10 @@
+import React from "react";
 import { Link } from "react-router-dom"
-import "./Home.css"
 
 export default function Home() {
     return (
         <div>
-
-            <img className="welcome" src= {require("./images/ddwelcome.png")} height={ 500 } width={ 500 } alt="Welcome"/>
+            <img className="welcome" src= {require("./images/ddwelcome.png")} height={ 400 } width={ 400 } alt="Welcome"/>
             <div className="directory">
                 <Link to={'/vendors'}>
                     <button className="btn1"><span>Our Vendors</span></button>
@@ -22,4 +21,4 @@ export default function Home() {
             </div>
         </div>
     );
-}
+};
