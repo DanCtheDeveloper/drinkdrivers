@@ -12,7 +12,7 @@ export default function Navbar() {
             width={200}
           />
         </Link>
-        <Link to="/">
+        <Link to="/home">
           <img
             src={require("./components/images/App-logo.png")}
             alt="DRINK DRIVERS"
