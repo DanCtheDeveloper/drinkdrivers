@@ -31,7 +31,7 @@ const vendors = [
                     </li>
                 </ul>
                 <br />
-                <Link to="/vendors" className='link'>Join Our Vendors!</Link>
+                <Link to="/login" className='link'>Join Our Vendors!</Link>
             </div>
         </div>
     );
