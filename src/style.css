@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body {
@@ -79,6 +80,7 @@ h3 {
 .nav-links {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 .nav-links a {
   text-decoration: none;
@@ -129,9 +131,27 @@ h3 {
   box-shadow: 7px 7px 40px 10px gold;
 }
 span {
-  color: white;
-  font-family: HeadLineA;
-  font-size: 40px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .welcome {
+      height: 250px;
+      width: 300px
+  }
+  .btn1, .btn2, .btn3, .btn4 {
+    margin-bottom: 1rem;
+    height: 200px;
+    width: 200px
+  }
+  span {
+      font-size: 30px;
+  }
 }
 
 /*app style*/
