@@ -1,7 +1,9 @@
 // const { MongoClient } = require('mongodb');
 
-// // Connection URL
-// const url = 'mongodb+srv://DanAnthony:kgsSCoNLYiaxbHjj@drinkdiversdatabase.1tqu5vz.mongodb.net/';
+
+// Connection URL
+const url = 'mongodb+srv://DanAnthony:kgsSCoNLYiaxbHjj@drinkdiversdatabase.1tqu5vz.mongodb.net/?retryWrites=true&w=majority';
+
 
 // // Database Name
 // const dbName = 'mydatabase';

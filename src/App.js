@@ -9,6 +9,12 @@ import Cart from './components/Cart';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Vendors from './components/Vendors';
+import Vendorsignup from './components/Vendorsignup';
+import Brews from './components/Brews';
+import Htownbrew from "./components/H-Townbrew";
+import Houseofbrew from "./components/Houseofbrew";
+import Surftown from "./components/Surftown";
+import Texandrafthouse from "./components/Texandrafthouse";
 import { Route, Routes, useLocation} from 'react-router-dom';
 
 function App() {
@@ -27,6 +33,12 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/vendors" element={<Vendors />} />
+          <Route path="/brews" element={<Brews />} />
+          <Route path="/vendorsignup" element={<Vendorsignup />} />
+          <Route path="/htownbrew" element={<Htownbrew />} />
+          <Route path="/houseofbrew" element={<Houseofbrew />} />
+          <Route path="/surftown" element={<Surftown />} />
+          <Route path="/texandrafthouse" element={<Texandrafthouse />} />
         </Routes>
       </div>
     </>
