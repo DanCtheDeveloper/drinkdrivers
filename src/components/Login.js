@@ -24,7 +24,7 @@ export default function Login() {
                 <br />
                 <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Password" className='password'/>
                 <br />
-                <button type="submit" onClick={submit} className='submit'>Log In & Get Beer</button>
+                <Link to="/DanHome" className='link'>Log in & Get Beer</Link>
             </form>
             <br />
             <Link to="/signup" className="link">
