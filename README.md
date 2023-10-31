@@ -37,7 +37,7 @@ Outstanding Bugs and Unfinished Functionality:
 Additional Sources: 
     Page outline was built using Figma
 
-    Github Progjects helped with keeping tasks set to one person unless help was needed
+    Github Projects helped with keeping tasks set to one person unless help was needed
 
     Canva AI was used to create background, cart and settings images, logos for breweries, and main Drink Driver logo
 
