@@ -20,9 +20,9 @@ export default function Signup() {
         <br />
         <input  type="password"  onChange={(e) => setPassword(e.target.value)}  placeholder="password" className='password'/>
         <br />
-        <button type="submit" onClick={submit} className='submit'>
+        <Link to="/DanHome" className='link'>
           Sign Up & Get Beer
-        </button>
+        </Link>
       </form>
       <br />
       <Link to="/vendors" className='link'>Vendor?</Link>

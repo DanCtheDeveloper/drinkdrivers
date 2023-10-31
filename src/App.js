@@ -16,6 +16,7 @@ import Houseofbrew from "./components/Houseofbrew";
 import Surftown from "./components/Surftown";
 import Texandrafthouse from "./components/Texandrafthouse";
 import { Route, Routes, useLocation} from 'react-router-dom';
+import DanHome from './components/DanHome';
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
           <Route path="/houseofbrew" element={<Houseofbrew />} />
           <Route path="/surftown" element={<Surftown />} />
           <Route path="/texandrafthouse" element={<Texandrafthouse />} />
+          <Route path="/DanHome" element={<DanHome />} />
         </Routes>
       </div>
     </>
