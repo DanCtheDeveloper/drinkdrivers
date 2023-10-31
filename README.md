@@ -1,75 +1,50 @@
-# Getting Started with Create React App
+Project Name:
+    Drink Driver
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Group Members:
+    Dan Contin, Andre Taqain, Anthony Munoz, Samuel McHargue, Nicolas Nueca, Kyle Donmoyer
 
-## Available Scripts
+Inspiration and Explanation:
+    "Drink Driver is an application that allows users to safely order from different Breweries around the user location. Once ordered, the brewery will fulfill the order and it will be delivered to the users location"
 
-In the project directory, you can run:
+Using the App:
+    On load, the app will ask user if age is 21+.
 
-### `npm start`
+    Once age is verified, home screen will show login, about page, vendors, and beer available.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    User can login and create a new profile to order from brewery, then will be redirected back to home page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    User can then view vendor page, cart, beer available page, and about page.
 
-### `npm test`
+    *Fun fact...if user is not 21+, they will get a link to a different children's page, PBS Kids*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technologies Used:
+    Technology 1: React for frontend 
 
-### `npm run build`
+    Technology 2: Node.js for backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Technology 3: MongoDB for database 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Technology 4: CSS, and Bootstrap Framework for styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Technology 5: Vercel for deployment
 
-### `npm run eject`
+Outstanding Bugs and Unfinished Functionality:
+    Bug 1: Describe a known issue in the app: Couldn't get the frontend to talk with backend and use Mongo database information 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Unfinished Functionality: Ordering the beer and checking out is a functionality that is still being worked on.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Additional Sources: 
+    Page outline was built using Figma
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Github Progjects helped with keeping tasks set to one person unless help was needed
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Canva AI was used to create background, cart and settings images, logos for breweries, and main Drink Driver logo
 
-## Learn More
+    Google was heavily used to find sources to help with creating databases, deploying, and frameworks for styling. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-Kyle Donmoyer
-
+Pre-Build Outline
 This app will be a direct brewery to client application!
 
 *Initial Age Verification*
@@ -86,3 +61,9 @@ Login Page
 -Cart Page
     -Payment Page (enter date of birth)
 -Order Confirmation Page (with notice to be ready to show your ID to driver upon delivery. Email confirmation?)
+
+
+Project Related Links:
+    Link to GitHub Repository: https://github.com/DanCtheDeveloper/drinkdrivers 
+    
+    Link to Live Demo: https://drinkdrivers.vercel.app
