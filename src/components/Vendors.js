@@ -14,24 +14,32 @@ const vendors = [
   export default function Vendors() {
     return (
         <div>
-            <h1>Breweries</h1>
+            <h1>Vendors</h1>
             <div className="breweries">
                 <ul>
                     <li>
-                    <img className="beer" src= {require ("./images/A&W.png")} height={ 300 } width={ 300 } alt="A&W"/>
+                        <Link to='/surftown'>
+                            <img className="beer" src= {require ("./images/Surftown.png")} height={ 300 } width={ 300 } alt="Surftown"/>
+                        </Link>
                     </li>
                     <li>
-                    <img className="beer" src= {require ("./images/BUSCH.png")} height={ 300 } width={ 300 } alt="BUSCH"/>
+                        <Link to='/houseofbrew'>
+                            <img className="beer" src= {require ("./images/Houseofbrew.png")} height={ 300 } width={ 300 } alt="Houseofbrew"/>
+                        </Link>
                     </li>
                     <li>
-                    <img className="beer" src= {require ("./images/coors-light.png")} height={ 300 } width={ 300 } alt="COORS"/>
+                        <Link to='/htownbrew'>
+                            <img className="beer" src= {require ("./images/H-Townbrew.png")} height={ 300 } width={ 300 } alt="H-Townbrew"/>
+                        </Link>
                     </li>
                     <li>
-                    <img className="beer" src= {require ("./images/amstel-beer.png")} height={ 300 } width={ 300 } alt="AMSTEL"/>
+                        <Link to='/texandrafthouse'>
+                            <img className="beer" src= {require ("./images/Texandrafthouse.png")} height={ 300 } width={ 300 } alt="Texandrafthouse"/>
+                        </Link>
                     </li>
                 </ul>
                 <br />
-                <Link to="/login" className='link'>Join Our Vendors!</Link>
+                <Link to="/vendorsignup" className='link'>Join Our Vendors!</Link>
             </div>
         </div>
     );
