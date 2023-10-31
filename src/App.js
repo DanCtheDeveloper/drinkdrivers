@@ -17,14 +17,17 @@ import Surftown from "./components/Surftown";
 import Texandrafthouse from "./components/Texandrafthouse";
 import { Route, Routes, useLocation} from 'react-router-dom';
 import DanHome from './components/DanHome';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+  
   const location = useLocation();
   const renderNavbar = !['/', '/underage'].includes(location.pathname);
   return (
     <>
       {renderNavbar && <Navbar />}
       <div className="container">
+      <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Age />} />
           <Route path="/underage" element={<Underage />} />
